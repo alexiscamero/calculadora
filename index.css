@@ -1,0 +1,103 @@
+.container {
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el GIF de fondo detrás de todo */
+  }
+  
+  .gif-fullscreen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Ajusta según desees */
+  }
+  
+  .calculator {
+    position: relative; /* Asegura que la calculadora respete el posicionamiento relativo */
+    z-index: 999; /* Coloca la calculadora en primer plano */
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 35px;
+    background-color: #3d4d49;
+    box-shadow: 15px 10px 0px 5px #55806e33;
+  }
+  
+
+  .buttons {
+    margin-top: 10px;
+    
+  }
+  
+  .btn {
+    width: 60px;
+    height: 70px;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.5rem; /* O un tamaño más pequeño si es necesario */
+    white-space: nowrap; /* Evita que el contenido del botón se envuelva */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el ancho del botón*/
+    background-color: #2b3835;
+    border: none;
+  
+  }
+  
+  .row, .col-3 {
+    padding: 0; /* Elimina el padding si es necesario */
+    gap: 2rem;
+}
+
+button {
+  border: none;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #19191a1f;
+}
+
+
+.display {
+  width: 93%;
+  max-width: 600px; /* nuevo */
+  min-width: 300px; /* nuevo */
+  grid-column: 1 / -1;
+  padding: 16px;
+  display: flex;
+  margin: 10px 10px 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #363636;
+  border-radius: 32px;
+  text-align: right;
+  justify-content: space-between;
+  word-break: break-all;
+  overflow: hidden; /* modificado */
+  box-shadow: 0px 0px 0px 10px #00000033;
+  font-size: 20px; /* nuevo */
+  height: 150px; /* O ajusta según necesites */
+    max-height: 150px; /* Previene que crezca más allá de 100px */
+}
+
+.button-panel {
+  background-color: #3d4d49;
+  width: 100%;
+}
+
+.gif-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    opacity: 0.2;
+  }
+  
+body {
+    background-color: black;
+}
